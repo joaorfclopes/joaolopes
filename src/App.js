@@ -1,42 +1,25 @@
-import React from "react";
-/* Styles */
-import "./styles/styles.css";
-/* Components */
-import Progress from "./components/Progress";
-import Home from "./components/Home";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import logo from './logo.svg';
+import './App.css';
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props.stopScroll();
-    this.props.hideRoot();
-    this.props.showLoader();
-  }
-
-  componentDidMount = () => {
-    document.onreadystatechange = () => {
-      if (document.readyState === "complete") {
-        setTimeout(() => {
-          this.props.hideLoader();
-          this.props.showRoot();
-          setTimeout(() => {
-            this.props.startScroll();
-          }, 4200);
-        }, 1500);
-      }
-    };
-  };
-
-  render = () => {
-    return (
-      <div className="App">
-        <Progress />
-        <Home />
-        <Portfolio />
-        <Contact />
-      </div>
-    );
-  };
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
+
+export default App;
