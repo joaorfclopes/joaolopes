@@ -1,0 +1,19 @@
+@import "./variables";
+
+.loader {
+  &__img {
+    width: 12vh;
+    position: absolute;
+  }
+  &__progress {
+    width: 12vh;
+    background-color: $light;
+    position: relative;
+    top: 7vh;
+    &__bar {
+      width: 1%;
+      height: 5px;
+      background-color: $mainColor;
+    }
+  }
+}

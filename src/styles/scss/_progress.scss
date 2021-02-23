@@ -1,0 +1,40 @@
+.progress {
+  .progress-top,
+  .progress-right,
+  .progress-bottom,
+  .progress-left {
+    position: fixed;
+    z-index: 999;
+    background-color: $secondaryColor;
+  }
+
+  .progress-top,
+  .progress-bottom {
+    height: $progress;
+  }
+
+  .progress-right,
+  .progress-left {
+    width: $progress;
+  }
+
+  .progress-top,
+  .progress-right {
+    top: 0;
+  }
+
+  .progress-top,
+  .progress-left {
+    left: 0;
+  }
+
+  .progress-bottom,
+  .progress-left {
+    bottom: 0;
+  }
+
+  .progress-bottom,
+  .progress-right {
+    right: 0;
+  }
+}

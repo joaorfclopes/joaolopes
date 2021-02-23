@@ -1,0 +1,32 @@
+@import "./scss/fonts";
+@import "./scss/variables";
+@import "./scss/loader";
+@import "./scss/progress";
+@import "./scss/home";
+@import "./scss/portfolio";
+@import "./scss/contact";
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $dark;
+  color: $light;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
