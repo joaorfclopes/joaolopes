@@ -1,0 +1,57 @@
+.wip {
+  font-family: $font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 95vh;
+  .wip-title {
+    line-height: 0.5;
+    text-align: center;
+    span {
+      display: inline-block;
+      position: relative;
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 1px solid white;
+        top: 0;
+        width: 50%;
+      }
+      &::before {
+        right: 100%;
+        margin-right: 15px;
+      }
+      &::after {
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+  object,
+  img {
+    max-width: 500px;
+    min-height: 50vh;
+  }
+  .wip-desc {
+    margin: 10px;
+    .dot1 {
+      @include visibility1;
+    }
+    .dot2 {
+      @include visibility2;
+    }
+    .dot3 {
+      @include visibility3;
+    }
+  }
+  .show {
+    @include fadeIn;
+  }
+  .hide {
+    opacity: 0;
+  }
+}

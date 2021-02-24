@@ -1,0 +1,118 @@
+@mixin xxs {
+  @media (min-width: #{$screen-xxs-min}) {
+    @content;
+  }
+}
+@mixin xs {
+  @media (min-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+@mixin xs-height {
+  @media (min-height: #{$screen-xs-min-height}) {
+    @content;
+  }
+}
+@mixin visibility1 {
+  @keyframes visibility1 {
+    0% {
+      opacity: 1;
+    }
+    65% {
+      opacity: 1;
+    }
+    66% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  animation: visibility1 3s linear infinite;
+}
+@mixin visibility2 {
+  @keyframes visibility2 {
+    0% {
+      opacity: 0;
+    }
+    21% {
+      opacity: 0;
+    }
+    22% {
+      opacity: 1;
+    }
+    65% {
+      opacity: 1;
+    }
+    66% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  animation: visibility2 3s linear infinite;
+}
+@mixin visibility3 {
+  @keyframes visibility3 {
+    0% {
+      opacity: 0;
+    }
+    43% {
+      opacity: 0;
+    }
+    44% {
+      opacity: 1;
+    }
+    65% {
+      opacity: 1;
+    }
+    66% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  animation: visibility3 3s linear infinite;
+}
+@mixin fadeIn {
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
