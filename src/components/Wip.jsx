@@ -7,7 +7,7 @@ export default function Wip() {
   useEffect(() => {
     setTimeout(() => {
       $(".wip-text").addClass("show");
-    }, 200);
+    }, 800);
   }, []);
 
   return (
