@@ -48,6 +48,23 @@
       @include visibility3;
     }
   }
+  .social {
+    svg {
+      width: 45px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 40px;
+      .social-network {
+        transition: 0.2s;
+      }
+      &:hover {
+        .social-network {
+          transition: 0.2s;
+          fill: $secondary;
+        }
+      }
+    }
+  }
   .show {
     @include fadeIn;
   }

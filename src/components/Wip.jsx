@@ -2,12 +2,26 @@ import React, { useEffect } from "react";
 import $ from "jquery";
 import wip from "../assets/wip.svg";
 import wipgif from "../assets/wip.gif";
+import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
+import { ReactComponent as Instagram } from "../assets/instagram.svg";
+import { ReactComponent as Facebook } from "../assets/facebook.svg";
 
 export default function Wip() {
-  useEffect(() => {
+  const showText = () => {
     setTimeout(() => {
       $(".wip-text").addClass("show");
     }, 800);
+  };
+
+  const showSocial = () => {
+    setTimeout(() => {
+      $(".social").addClass("show");
+    }, 1200);
+  };
+
+  useEffect(() => {
+    showText();
+    showSocial();
   }, []);
 
   return (
@@ -23,6 +37,29 @@ export default function Wip() {
         <span className="dot2">.</span>
         <span className="dot3">.</span>
       </h2>
+      <div className="social hide">
+        <a
+          href="https://www.linkedin.com/in/joaorfclopes/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <LinkedIn />
+        </a>
+        <a
+          href="https://www.instagram.com/juaum.lopes/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Instagram />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100006059823061"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Facebook />
+        </a>
+      </div>
     </div>
   );
 }
