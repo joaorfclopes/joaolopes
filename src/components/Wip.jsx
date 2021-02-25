@@ -3,6 +3,7 @@ import $ from "jquery";
 import wip from "../assets/wip.svg";
 import wipgif from "../assets/wip.gif";
 import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
+import { ReactComponent as Github } from "../assets/github.svg";
 import { ReactComponent as Instagram } from "../assets/instagram.svg";
 import { ReactComponent as Facebook } from "../assets/facebook.svg";
 
@@ -38,6 +39,13 @@ export default function Wip() {
         <span className="dot3">.</span>
       </h2>
       <div className="social hide">
+        <a
+          href="https://github.com/joaorfclopes"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Github />
+        </a>
         <a
           href="https://www.linkedin.com/in/joaorfclopes/"
           target="_blank"

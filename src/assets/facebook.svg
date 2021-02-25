@@ -1,9 +1,13 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" x="0" y="0"
-    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-    <g>
-        <path xmlns="http://www.w3.org/2000/svg"
-            d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h236.574219v-198h-66.5v-77.5h66.5v-57.035156c0-66.140625 40.378906-102.140625 99.378906-102.140625 28.257813 0 52.542969 2.105469 59.621094 3.046875v69.128906h-40.683594c-32.101562 0-38.316406 15.253906-38.316406 37.640625v49.359375h76.75l-10 77.5h-66.75v198h121.574219c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm0 0"
-            fill="#ffffff" data-original="#000000" style="" class="social-network" />
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	y="0px" viewBox="0 0 85 85" style="enable-background:new 0 0 85 85;" xml:space="preserve">
+	<style>
+		.st0 {
+			fill: #FFFFFF;
+		}
+	</style>
+	<path class="st0" d="M0,0v85h85V0H0z M66.3,63.7c0,1.5-1.2,2.6-2.6,2.6H51.5V47.9h6.2l0.9-7.2h-7.1v-4.6c0-2.1,0.6-3.5,3.6-3.5h3.8
+	v-6.4c-1.8-0.2-3.7-0.3-5.5-0.3c-5.5,0-9.2,3.3-9.2,9.5v5.3h-6.2v7.2h6.2v18.4H21.3c-1.5,0-2.6-1.2-2.6-2.6V21.3
+	c0-1.5,1.2-2.6,2.6-2.6h42.3c1.5,0,2.6,1.2,2.6,2.6V63.7z" />
 </svg>
