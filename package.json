@@ -16,7 +16,7 @@
     "commit-backend": "git add . && git commit --allow-empty -m \"backend deploy\" && git push origin master",
     "commit-frontend": "git add . && git commit --allow-empty -m \"frontend deploy\" && git push origin master",
     "deploy-backend": "yarn build-backend && yarn commit-backend && git push joaolopes-backend `git subtree split --prefix backend master`:master --force",
-    "deploy-frontend": "yarn build-frontend && yarn commit-frontend && git subtree push --prefix frontend joaolopes-frontend master",
+    "deploy-frontend": "yarn build-frontend && yarn commit-frontend && git push joaolopes-frontend `git subtree split --prefix frontend master`:master --force",
     "full-deploy": "yarn deploy-backend && yarn deploy-frontend"
   },
   "repository": {
