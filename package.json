@@ -1,0 +1,35 @@
+{
+  "name": "joaolopes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "update-backend": "cd backend && yarn install",
+    "update-frontend": "cd frontend && yarn install",
+    "update": "yarn install && yarn update-backend && yarn update-frontend",
+    "setup": "yarn update && git remote add joaolopes-backend https://git.heroku.com/joaolopes-backend.git && git remote add joaolopes-frontend https://git.heroku.com/joaolopes.git",
+    "dev-backend": "cd backend && yarn develop --watch-admin",
+    "dev-frontend": "cd frontend && yarn dev",
+    "dev": "concurrently \"yarn dev-backend\" \"yarn dev-frontend\"",
+    "build-backend": "cd backend && yarn install && yarn build",
+    "build-frontend": "cd frontend && yarn install && yarn build",
+    "commit-backend": "git add . && git commit --allow-empty -m \"backend deploy\" && git push origin master",
+    "commit-frontend": "git add . && git commit --allow-empty -m \"frontend deploy\" && git push origin master",
+    "deploy-backend": "yarn build-backend && yarn commit-backend && git subtree push --prefix backend joaolopes-backend master",
+    "deploy-frontend": "yarn build-frontend && yarn commit-frontend && git subtree push --prefix frontend joaolopes-frontend master",
+    "full-deploy": "yarn deploy-backend && yarn deploy-frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaorfclopes/joaolopes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaorfclopes/joaolopes/issues"
+  },
+  "homepage": "https://github.com/joaorfclopes/joaolopes#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
