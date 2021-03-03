@@ -7,7 +7,7 @@
     "update-backend": "cd backend && yarn install",
     "update-frontend": "cd frontend && yarn install",
     "update": "yarn install && yarn update-backend && yarn update-frontend",
-    "setup": "yarn update && git remote add joaolopes-backend https://git.heroku.com/joaolopes-backend.git && git remote add joaolopes-frontend https://git.heroku.com/joaolopes.git",
+    "setup": "yarn update && git remote add joaolopes-backend https://git.heroku.com/joaolopes-backend-prod.git && git remote add joaolopes-frontend https://git.heroku.com/joaolopes-prod.git",
     "dev-backend": "cd backend && yarn develop --watch-admin",
     "dev-frontend": "cd frontend && yarn dev",
     "dev": "concurrently \"yarn dev-backend\" \"yarn dev-frontend\"",
