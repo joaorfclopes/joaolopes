@@ -15,8 +15,11 @@ export default function Home() {
       document.querySelector(".loading").classList.add("hide");
       setTimeout(() => {
         document.querySelector(".loading").classList.add("delete");
-        showShapes();
-        document.body.style.overflow = "auto";
+        document.querySelector(".title").classList.add("show");
+        setTimeout(() => {
+          showShapes();
+          document.body.style.overflow = "auto";
+        }, 100);
       }, 500);
     }, 1500);
   }, []);
@@ -25,6 +28,9 @@ export default function Home() {
     <div className="home">
       <Shape1 />
       <Shape2 />
+      <div className="title">
+        <h1>João Lopes</h1>
+      </div>
     </div>
   );
 }
