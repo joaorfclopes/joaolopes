@@ -1,0 +1,12 @@
+<svg class="shape shape2" viewBox="0 0 500 511" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-458.000000, -470.000000)" fill="#DFDFDF">
+            <g id="Simple-Shiny" transform="translate(66.000000, 256.000000)">
+                <path
+                    d="M892,214 L892,724.733757 L392,724.733757 C394.097103,701.187145 397.164177,677.621467 400.860789,654.118479 C416.026785,557.693585 430.821263,453.970798 499.656567,384.766046 C567.127914,316.93353 675.5697,325.377021 764.050945,288.979666 C809.087666,270.453363 850.415489,240.790708 892,214 Z"
+                    id="shape2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

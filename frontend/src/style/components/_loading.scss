@@ -1,0 +1,8 @@
+.loading {
+  &.hide {
+    @include hide-loading;
+  }
+  &.delete {
+    display: none;
+  }
+}
