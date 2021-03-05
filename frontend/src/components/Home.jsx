@@ -15,10 +15,10 @@ export default function Home() {
       document.querySelector(".loading").classList.add("hide");
       setTimeout(() => {
         document.querySelector(".loading").classList.add("delete");
-        document.querySelector(".title").classList.add("show");
+        document.querySelector(".title-container").classList.add("show");
+        document.querySelector(".role-text").classList.add("show");
         setTimeout(() => {
           showShapes();
-          document.body.style.overflow = "auto";
         }, 100);
       }, 500);
     }, 1500);
@@ -28,8 +28,15 @@ export default function Home() {
     <div className="home">
       <Shape1 />
       <Shape2 />
-      <div className="title">
-        <h1>João Lopes</h1>
+      <div className="title-container">
+        <div className="box">
+          <div className="title">
+            <h1>João Lopes</h1>
+          </div>
+          <div className="role">
+            <p className="role-text">Front-End Developer</p>
+          </div>
+        </div>
       </div>
     </div>
   );

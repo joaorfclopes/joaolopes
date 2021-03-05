@@ -112,22 +112,70 @@
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @mixin show-title {
-  @-webkit-keyframes fade-in {
+  @-webkit-keyframes text-focus-in {
     0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
       opacity: 0;
     }
     100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
       opacity: 1;
     }
   }
-  @keyframes fade-in {
+  @keyframes text-focus-in {
     0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
       opacity: 0;
     }
     100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
       opacity: 1;
     }
   }
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@mixin show-role {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 86%;
+    }
+  }
+  @include xs {
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 75%;
+      }
+    }
+  }
+  @include md {
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 56%;
+      }
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+    blinkTextCursor 600ms steps(44) infinite normal;
 }
