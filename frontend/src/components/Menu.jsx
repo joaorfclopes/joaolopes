@@ -1,21 +1,25 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function Menu() {
-  useEffect(() => {
-    const menu = document.querySelector(".menu");
-    const btn = menu.querySelector(".nav-tgl");
-    btn.addEventListener("click", (evt) => {
-      menu.classList.toggle("active");
-    });
-  }, []);
+  const toggleMenu = () => {
+    document.querySelector(".menu").classList.toggle("active");
+    setTimeout(() => {
+      document.querySelector(".nav").classList.toggle("show");
+    }, 300);
+  };
 
   return (
     <div className="menu">
-      <button className="nav-tgl" type="button" aria-label="toggle menu">
+      <button
+        onClick={toggleMenu}
+        className="nav-tgl"
+        type="button"
+        aria-label="toggle menu"
+      >
         <span aria-hidden="true"></span>
       </button>
       <nav className="nav">
-        <ul>
+        <ul className="options">
           <li>Home</li>
           <li>About</li>
           <li>Portfolio</li>
