@@ -1,0 +1,34 @@
+.home {
+  .shape {
+    z-index: 1;
+    opacity: 0;
+    @include xxs {
+      width: 70%;
+    }
+    @include sm {
+      width: 55%;
+    }
+    @include md {
+      width: 50%;
+    }
+    @include lg {
+      width: 40%;
+    }
+    &.shape1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      &.show {
+        @include show-shape1;
+      }
+    }
+    &.shape2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      &.show {
+        @include show-shape2;
+      }
+    }
+  }
+}

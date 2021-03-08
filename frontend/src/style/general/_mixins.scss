@@ -29,29 +29,34 @@
   }
 }
 @mixin hide-loading {
-  @-webkit-keyframes slide-out-top {
+  @-webkit-keyframes slide-out-right {
     0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
     }
     100% {
-      -webkit-transform: translateY(-1000px);
-      transform: translateY(-1000px);
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
     }
   }
-  @keyframes slide-out-top {
+  @keyframes slide-out-right {
     0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
     }
     100% {
-      -webkit-transform: translateY(-1000px);
-      transform: translateY(-1000px);
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
     }
   }
-  -webkit-animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+
+  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;
-  animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 @mixin show-shape1 {
   @-webkit-keyframes slide-in-left {
