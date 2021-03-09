@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
 import { useSwipeable } from "react-swipeable";
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Home from "./views/Home";
 import About from "./views/About";
 import Portfolio from "./views/Portfolio";
@@ -15,7 +16,9 @@ function App() {
   };
 
   const scrollUp = (event) => {
-    const srcElement = event.event.srcElement.className;
+    const srcElement = event.event
+      ? event.event.srcElement.className
+      : event.target.className;
     const index = options.indexOf(srcElement);
     const target = options[index - 1];
     try {
@@ -29,7 +32,9 @@ function App() {
   };
 
   const scrollDown = (event) => {
-    const srcElement = event.event.srcElement.className;
+    const srcElement = event.event
+      ? event.event.srcElement.className
+      : event.target.className;
     const index = options.indexOf(srcElement);
     const target = options[index + 1];
     try {
@@ -52,12 +57,17 @@ function App() {
   }, []);
 
   return (
-    <div {...handlers} className="App">
-      <Home />
-      <About />
-      <Portfolio />
-      <Contacts />
-    </div>
+    <ReactScrollWheelHandler
+      upHandler={(event) => scrollUp(event)}
+      downHandler={(event) => scrollDown(event)}
+    >
+      <div {...handlers} className="App">
+        <Home />
+        <About />
+        <Portfolio />
+        <Contacts />
+      </div>
+    </ReactScrollWheelHandler>
   );
 }
 
