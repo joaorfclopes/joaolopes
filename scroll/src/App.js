@@ -16,12 +16,12 @@ function App() {
   };
 
   const scrollUp = (event) => {
-    const srcElement = event.event
-      ? event.event.srcElement.className
-      : event.target.className;
-    const index = options.indexOf(srcElement);
-    const target = options[index - 1];
     try {
+      const srcElement = event.event
+        ? event.event.srcElement.className
+        : event.target.className;
+      const index = options.indexOf(srcElement);
+      const target = options[index - 1];
       $("html, body").animate(
         {
           scrollTop: $(`.${target}`).offset().top,
@@ -32,12 +32,12 @@ function App() {
   };
 
   const scrollDown = (event) => {
-    const srcElement = event.event
-      ? event.event.srcElement.className
-      : event.target.className;
-    const index = options.indexOf(srcElement);
-    const target = options[index + 1];
     try {
+      const srcElement = event.event
+        ? event.event.srcElement.className
+        : event.target.className;
+      const index = options.indexOf(srcElement);
+      const target = options[index + 1];
       $("html, body").animate(
         {
           scrollTop: $(`.${target}`).offset().top,
