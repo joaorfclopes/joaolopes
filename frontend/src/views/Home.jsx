@@ -5,7 +5,7 @@ import Title from "../components/Title";
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="view home">
       <Shape1 />
       <Shape2 />
       <Title />

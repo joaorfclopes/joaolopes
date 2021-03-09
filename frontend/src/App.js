@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Menu from "./components/Menu";
+import About from "./views/About";
 import Home from "./views/Home";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
     <div className="App">
       <Menu />
       <Home />
+      <About />
     </div>
   );
 }
