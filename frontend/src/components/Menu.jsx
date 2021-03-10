@@ -1,11 +1,18 @@
 import React from "react";
-import { options } from "../utils";
+import { options, scrollToSection } from "../utils";
 
 export default function Menu() {
   const toggleMenu = () => {
     document.querySelector(".menu").classList.toggle("active");
     setTimeout(() => {
       document.querySelector(".nav").classList.toggle("show");
+    }, 300);
+  };
+
+  const handleCLick = (option) => {
+    toggleMenu();
+    setTimeout(() => {
+      scrollToSection(option);
     }, 300);
   };
 
@@ -22,7 +29,7 @@ export default function Menu() {
       <nav className="nav">
         <ul className="options">
           {options.map((option) => (
-            <li key={option} onClick={toggleMenu}>
+            <li key={option} onClick={() => handleCLick(option)}>
               {option}
             </li>
           ))}

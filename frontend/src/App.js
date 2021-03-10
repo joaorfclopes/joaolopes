@@ -6,7 +6,7 @@ import Home from "./views/Home";
 import About from "./views/About";
 import Portfolio from "./views/Portfolio";
 import Contacts from "./views/Contacts";
-import { scrollTop, scrollDown, scrollUp, showHome } from "./utils";
+import { scrollTop, scrollDown, scrollUp } from "./utils";
 
 function App() {
   const handlers = useSwipeable({
@@ -20,7 +20,7 @@ function App() {
       setTimeout(() => {
         document.querySelector(".loading").classList.add("delete");
         document.querySelector(".menu").classList.add("show");
-        showHome();
+        //showHome();
       }, 500);
     }, 1500);
     scrollTop();

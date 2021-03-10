@@ -19,6 +19,7 @@
         font-size: 2rem;
         text-transform: capitalize;
         cursor: pointer;
+
         &:not(:last-child) {
           margin-bottom: 4vh;
         }
@@ -28,6 +29,11 @@
       .options {
         visibility: visible;
         li {
+          transition: 0.3s;
+          &:hover {
+            color: black;
+            transition: 0.3s;
+          }
           &:nth-child(1) {
             @include show-options(0s);
           }
