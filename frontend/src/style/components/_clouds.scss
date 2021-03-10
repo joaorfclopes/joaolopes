@@ -22,29 +22,18 @@
     }
   }
   &.cloud2 {
-    position: absolute;
-    right: 0;
-    bottom: -40%;
+    position: relative;
+    top: -40%;
     @include sm {
-      bottom: -50%;
-    }
-    @include md {
-      bottom: -60%;
+      top: -50%;
     }
     @include lg {
-      bottom: -70%;
+      top: -60%;
     }
     @include xl {
-      bottom: -90%;
+      top: -70%;
     }
-    &.show {
-      @include show-cloud2;
-    }
-  }
-  &.cloud3 {
-    position: relative;
-    top: 0;
-    right: 0;
+    float: right;
     &.show {
       @include show-cloud2;
     }

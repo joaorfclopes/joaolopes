@@ -2,7 +2,7 @@ import $ from "jquery";
 
 export const options = ["home", "about", "portfolio", "contacts"];
 
-/*export const showHome = () => {
+export const showHome = () => {
   document.querySelector(".title-container").classList.add("show");
   document.querySelector(".role-text").classList.add("show");
   setTimeout(() => {
@@ -11,7 +11,7 @@ export const options = ["home", "about", "portfolio", "contacts"];
       document.querySelector(".cloud2").classList.add("show");
     }, 300);
   }, 200);
-};*/
+};
 
 export const scrollTop = () => {
   $("html, body").animate({

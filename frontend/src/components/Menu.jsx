@@ -12,7 +12,9 @@ export default function Menu() {
   const handleCLick = (option) => {
     toggleMenu();
     setTimeout(() => {
-      scrollToSection(option);
+      try {
+        scrollToSection(option);
+      } catch (error) {}
     }, 300);
   };
 
