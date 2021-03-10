@@ -58,7 +58,7 @@
     both;
   animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
-@mixin show-shape1 {
+@mixin show-cloud1 {
   @-webkit-keyframes slide-in-left {
     0% {
       -webkit-transform: translateX(-1000px);
@@ -87,7 +87,7 @@
     both;
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-@mixin show-shape2 {
+@mixin show-cloud2 {
   @-webkit-keyframes slide-in-right {
     0% {
       -webkit-transform: translateX(1000px);

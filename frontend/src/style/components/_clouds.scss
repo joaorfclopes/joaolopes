@@ -1,0 +1,52 @@
+.cloud {
+  z-index: -1;
+  opacity: 0;
+  @include xxs {
+    width: 70%;
+  }
+  @include sm {
+    width: 55%;
+  }
+  @include md {
+    width: 50%;
+  }
+  @include lg {
+    width: 40%;
+  }
+  &.cloud1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &.show {
+      @include show-cloud1;
+    }
+  }
+  &.cloud2 {
+    position: absolute;
+    right: 0;
+    bottom: -40%;
+    @include sm {
+      bottom: -50%;
+    }
+    @include md {
+      bottom: -60%;
+    }
+    @include lg {
+      bottom: -70%;
+    }
+    @include xl {
+      bottom: -90%;
+    }
+    &.show {
+      @include show-cloud2;
+    }
+  }
+  &.cloud3 {
+    position: relative;
+    top: 0;
+    right: 0;
+    &.show {
+      @include show-cloud2;
+    }
+  }
+}

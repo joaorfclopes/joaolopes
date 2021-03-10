@@ -6,9 +6,9 @@ export const showHome = () => {
   document.querySelector(".title-container").classList.add("show");
   document.querySelector(".role-text").classList.add("show");
   setTimeout(() => {
-    document.querySelector(".shape1").classList.add("show");
+    document.querySelector(".cloud1").classList.add("show");
     setTimeout(() => {
-      document.querySelector(".shape2").classList.add("show");
+      document.querySelector(".cloud2").classList.add("show");
     }, 300);
   }, 200);
 };
