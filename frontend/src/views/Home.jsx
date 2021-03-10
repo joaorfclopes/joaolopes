@@ -5,10 +5,10 @@ import Title from "../components/Title";
 
 export default function Home() {
   return (
-    <div className="view home">
+    <section className="home">
       <Shape1 />
       <Shape2 />
-      <Title />
-    </div>
+      <Title sectionScroll="home-scroll" />
+    </section>
   );
 }

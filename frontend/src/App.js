@@ -1,19 +1,18 @@
 import React, { useEffect } from "react";
+import { useSwipeable } from "react-swipeable";
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Menu from "./components/Menu";
-import About from "./views/About";
 import Home from "./views/Home";
+import About from "./views/About";
+import Portfolio from "./views/Portfolio";
+import Contacts from "./views/Contacts";
+import { scrollTop, scrollDown, scrollUp, showHome } from "./utils";
 
 function App() {
-  const showHome = () => {
-    document.querySelector(".title-container").classList.add("show");
-    document.querySelector(".role-text").classList.add("show");
-    setTimeout(() => {
-      document.querySelector(".shape1").classList.add("show");
-      setTimeout(() => {
-        document.querySelector(".shape2").classList.add("show");
-      }, 300);
-    }, 200);
-  };
+  const handlers = useSwipeable({
+    onSwipedUp: (event) => scrollDown(event),
+    onSwipedDown: (event) => scrollUp(event),
+  });
 
   useEffect(() => {
     setTimeout(() => {
@@ -24,14 +23,22 @@ function App() {
         showHome();
       }, 500);
     }, 1500);
+    scrollTop();
   }, []);
 
   return (
-    <div className="App">
-      <Menu />
-      <Home />
-      <About />
-    </div>
+    <ReactScrollWheelHandler
+      upHandler={(event) => scrollUp(event)}
+      downHandler={(event) => scrollDown(event)}
+    >
+      <div {...handlers} className="App">
+        <Menu />
+        <Home />
+        <About />
+        <Portfolio />
+        <Contacts />
+      </div>
+    </ReactScrollWheelHandler>
   );
 }
 

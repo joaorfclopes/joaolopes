@@ -1,5 +1,4 @@
 import React from "react";
-import $ from "jquery";
 import { options } from "../utils";
 
 export default function Menu() {
@@ -7,20 +6,6 @@ export default function Menu() {
     document.querySelector(".menu").classList.toggle("active");
     setTimeout(() => {
       document.querySelector(".nav").classList.toggle("show");
-    }, 300);
-  };
-
-  const scrollToSection = (section) => {
-    toggleMenu();
-    setTimeout(() => {
-      try {
-        $("html, body").animate(
-          {
-            scrollTop: $(`.${section}`).offset().top,
-          },
-          800
-        );
-      } catch (error) {}
     }, 300);
   };
 
@@ -37,7 +22,7 @@ export default function Menu() {
       <nav className="nav">
         <ul className="options">
           {options.map((option) => (
-            <li key={option} onClick={() => scrollToSection(option)}>
+            <li key={option} onClick={toggleMenu}>
               {option}
             </li>
           ))}

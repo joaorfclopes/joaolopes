@@ -1,14 +1,16 @@
 import React from "react";
 
-export default function Title() {
+export default function Title(props) {
   return (
-    <div className="title-container">
-      <div className="box">
-        <div className="title">
-          <h1>João Lopes</h1>
+    <div className={`title-container ${props.sectionScroll}`}>
+      <div className={`box ${props.sectionScroll}`}>
+        <div className={`title ${props.sectionScroll}`}>
+          <h1 className={`title-text ${props.sectionScroll}`}>João Lopes</h1>
         </div>
-        <div className="role">
-          <p className="role-text">Front-End Developer</p>
+        <div className={`role ${props.sectionScroll}`}>
+          <p className={`role-text ${props.sectionScroll}`}>
+            Front-End Developer
+          </p>
         </div>
       </div>
     </div>
