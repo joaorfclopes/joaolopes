@@ -80,7 +80,7 @@ export const scrollDown = (event) => {
         smoothScrollDown("home");
       } else if (srcElement.includes("aos-init")) {
         const parent = $(".aos-init").parent()[0].className;
-        smoothScrollUp(parent);
+        smoothScrollDown(parent);
       }
     }
   } catch (error) {}
