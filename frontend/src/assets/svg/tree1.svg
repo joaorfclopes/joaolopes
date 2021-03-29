@@ -1,0 +1,7 @@
+<svg class="tree tree1" viewBox="0 0 262 711" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="tree1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M131.5,427.5 L131.5,701" id="Line" stroke="#9FD983" stroke-width="20" stroke-linecap="square"></path>
+        <polygon id="Triangle" fill="#9FD983" points="131 0 262 610 0 610"></polygon>
+    </g>
+</svg>

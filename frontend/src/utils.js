@@ -60,6 +60,9 @@ export const scrollUp = (event) => {
     } else {
       if (srcElement.includes("home-scroll")) {
         smoothScrollUp("home");
+      } else if (srcElement.includes("aos-init")) {
+        const parent = $(".aos-init").parent()[0].className;
+        smoothScrollUp(parent);
       }
     }
   } catch (error) {}
@@ -75,6 +78,9 @@ export const scrollDown = (event) => {
     } else {
       if (srcElement.includes("home-scroll")) {
         smoothScrollDown("home");
+      } else if (srcElement.includes("aos-init")) {
+        const parent = $(".aos-init").parent()[0].className;
+        smoothScrollUp(parent);
       }
     }
   } catch (error) {}

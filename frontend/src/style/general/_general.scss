@@ -21,8 +21,12 @@ body {
 }
 section {
   height: 100vh;
+  position: relative;
   h1 {
     margin: 0;
     font-family: "Poppins", sans-serif;
   }
+}
+.aos-init {
+  height: 100%;
 }

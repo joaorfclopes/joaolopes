@@ -31,14 +31,19 @@
         li {
           transition: 0.3s;
           &:hover {
-            color: black;
             transition: 0.3s;
           }
           &:nth-child(1) {
             @include show-options(0s);
+            &:hover {
+              color: #aed6ff;
+            }
           }
           &:nth-child(2) {
             @include show-options(0.25s);
+            &:hover {
+              color: #9fd983;
+            }
           }
           &:nth-child(3) {
             @include show-options(0.5s);
