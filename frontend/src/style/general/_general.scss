@@ -20,7 +20,7 @@ body {
   overflow: hidden;
 }
 section {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
   h1 {
     margin: 0;
