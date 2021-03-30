@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
   .nav {
-    color: white;
+    color: black;
     .options {
       display: inline-block;
       visibility: hidden;
@@ -34,22 +34,22 @@
             transition: 0.3s;
           }
           &:nth-child(1) {
-            @include show-options(0s);
+            @include show-option(0s);
             &:hover {
               color: #aed6ff;
             }
           }
           &:nth-child(2) {
-            @include show-options(0.25s);
+            @include show-option(0.25s);
             &:hover {
               color: #9fd983;
             }
           }
           &:nth-child(3) {
-            @include show-options(0.5s);
+            @include show-option(0.5s);
           }
           &:nth-child(4) {
-            @include show-options(0.75s);
+            @include show-option(0.75s);
           }
         }
       }
@@ -118,7 +118,7 @@
     content: "";
     width: 100vw;
     height: 100vh;
-    background: #b2b2b2;
+    background: whitesmoke;
     transition: all 500ms ease-in-out;
     clip-path: circle(30px at calc(100% - 65px) 65px);
     visibility: hidden;
