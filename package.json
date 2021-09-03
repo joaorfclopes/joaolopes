@@ -30,6 +30,6 @@
   },
   "homepage": "https://github.com/joaorfclopes/joaolopes#readme",
   "devDependencies": {
-    "concurrently": "^6.0.0"
+    "concurrently": "^6.2.1"
   }
 }
